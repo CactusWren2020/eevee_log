@@ -1,0 +1,1 @@
+ <a href="index.php"><img class="card-img-top pb-5" src="templates/assets/images/<?php echo htmlspecialchars($character['path_to_pic']); ?>" /></a>

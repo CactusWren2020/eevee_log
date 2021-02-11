@@ -1,0 +1,8 @@
+database: eevees
+table: characters
+
+
+user: umber
+host: localhost
+password: Jupiter1031
+
