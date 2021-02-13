@@ -1,4 +1,4 @@
-<img src="images/PngItem_1349015.png">
+<img src="images/PngItem_1349015.png" style="width: 300px">
 
 <h1>EeeVee-Base</h1>
 
