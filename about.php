@@ -9,7 +9,7 @@
 </div> <!--container-->
 
 <div class="container">
-    <div class="row bg-light p-5 mt-5">
+    <div class="row bg-light p-5 my-5">
         <div class="col">
             <h3 class="mb-3">Browse</h3>
             <p>Look through our collection of EeeVees, both main cast and supporting cast.</p>
@@ -21,7 +21,7 @@
         </div>
         <div class="col">
             <div class="card pt-3">
-                <a href="#"><img class="card-img-top" src="templates/assets/images/sylveon.jpg" alt=""></a>
+                <a href="index.php"><img class="card-img-top" src="templates/assets/images/sylveon.jpg" alt=""></a>
                 <div class="card-body">
 
                     <h5 class="card-title">

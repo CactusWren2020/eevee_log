@@ -1,4 +1,6 @@
 <?php
+include('templates/header.php'); 
+
 //connect to database
 include('config/db_connect.php');
 
@@ -10,7 +12,6 @@ if (isset($_GET['id'])) {
     $sql = "SELECT * FROM characters WHERE id = '$id_query'";
     $result = mysqli_query($conn, $sql);
     $result_array = mysqli_fetch_assoc($result);
-    // var_dump($result_array);   
     $pathinfo = pathinfo($result_array['path_to_pic']);
 
     mysqli_free_result($result);
@@ -24,18 +25,11 @@ if (isset($_POST['update'])) {
 
     //compare new path_to_pic to old value
     $id = $_POST['id'];
-    echo $_FILES['image_upload']['name'];
     $sql = "SELECT path_to_pic FROM characters WHERE id = '$id'";
     $result = mysqli_query($conn, $sql);
     $result_array = mysqli_fetch_assoc($result);
     $pathinfo = pathinfo($result_array['path_to_pic']);
 
-    echo ($pathinfo['filename'].'.'.$pathinfo['extension']);
-    
-    // echo $_FILES['image_upload']['name'];
-    // if (!$_FILES['image_upload']['name']) {
-    //     echo 'no new file';
-    // }
 
     if (($pathinfo['filename'].'.'.$pathinfo['extension']) == $_FILES['image_upload']['name'] OR !$_FILES['image_upload']['name']) {
         $path_to_pic = $result_array['path_to_pic'];
@@ -55,7 +49,7 @@ if (isset($_POST['update'])) {
 }
      
     $id = $_POST['id'];
-    $sql = "UPDATE characters SET character_name = '$character_name', character_age = '$character_age', character_powers = '$character_powers', actor_name = '$actor_name', actor_age = '$actor_age', actor_followers = '$actor_followers', actor_net_worth = '$actor_net_worth', character_description = '$character_description', path_to_pic = '$path_to_pic'
+    $sql = "UPDATE characters SET character_name = '$character_name', character_age = '$character_age', character_powers = '$character_powers', actor_name = '$actor_name', actor_age = '$actor_age', actor_followers = '$actor_followers', actor_net_worth = '$actor_net_worth', actor_description = '$actor_description', character_description = '$character_description', path_to_pic = '$path_to_pic'
        WHERE id = '$id'";
     
     // echo $sql;
@@ -63,14 +57,15 @@ if (isset($_POST['update'])) {
     if (mysqli_query($conn, $sql)) {
         //success
         header('Location: index.php');
+        exit;
     } else {
         //error
-        // echo 'sorry, query failed';
+        echo 'sorry, query failed';
     }
 }
 
 ?>
-<?php include('templates/header.php'); ?>
+
 
 <div class="container p-5">
     <div class="row">

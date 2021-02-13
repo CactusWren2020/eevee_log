@@ -1,4 +1,5 @@
-<?php
+<?php include('templates/header.php');  
+
 
 include('config/db_connect.php');
 
@@ -9,6 +10,7 @@ $check = mysqli_fetch_all($check_result, MYSQLI_ASSOC);
 if (!$check[0]['count(*)'] > 0) {
     //if empty, go to add.php
     header('Location: add.php');
+    exit;
 }
 
 $sql = 'SELECT * FROM characters ORDER BY id';
@@ -21,17 +23,17 @@ mysqli_close($conn);
 
 ?>
 
-<?php include('templates/header.php'); ?>
 
-<div class="container bg-light p-5">
+
+<div class="container bg-light p-5 mt-5">
 
     <div class="row">
 
         <?php foreach ($characters as $character) : ?>
-            <div class="col bg-light">
-                <div class="card p-2">
+            <div class="col-12 col-md-4 pb-5 bg-light">
+                <div class="card pb-2">
                
-                <a href="index.php"><img class="card-img-top pb-5" src="<?php echo htmlspecialchars($character['path_to_pic']); ?>" /></a>
+                 <a href="index"><img class="card-img-top pb-5 card-img" src="<?php echo htmlspecialchars($character['path_to_pic']); ?>"></a>
                     <div class="card-body">
                         <h5 class="card-title">
                             <?php echo htmlspecialchars($character['character_name']); ?></h5>

@@ -1,6 +1,11 @@
-<?php
+<?php include('templates/header.php');
 include('config/db_connect.php');
 
+//check if logged in
+// if (isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true) {
+//     $loggedin = true;
+// }
+ 
 //check get request id parameter
 
 if (isset($_GET['id'])) {
@@ -23,10 +28,10 @@ if (isset($_POST['delete'])) {
 }
 ?>
 
-<?php include('templates/header.php'); ?>
 
 
-<?php if ($character) : ?>
+
+<?php if ($character) : // from query string ?>
     <div class="container p-5">
         <div class="row d-flex flex-column">
             <div class="col  d-flex align-items-center flex-column">
@@ -49,10 +54,26 @@ if (isset($_POST['delete'])) {
 
                     <p>Description: <?php echo htmlspecialchars($character['actor_description']); ?></p>
                     <form action="details.php" method="POST" class="">
-                        <input type="hidden" name="id_to_delete" class="" value="<?php echo $character['id']; ?>">
-                       
-                        <input type="submit" name="delete" value="Delete" class="btn btn-dark form-control mt-3">
                         
+                        <!--link to update page-->
+
+                        <?php
+                        //shows update button only if logged in
+                        if ($loggedin) { ?>
+                            <a href="update.php?id=<?php echo htmlspecialchars($_GET['id']); ?>" class="btn btn-dark form-control mt-3">Update</a>  
+                        <?php }
+                        ?>
+                        
+                        <?php 
+                        //shows delete button only if logged in
+                        if ($loggedin) { ?> 
+                        <input type="hidden" name="id_to_delete" class="" value="<?php echo $character['id']; ?>">
+
+                        <!--delete with form action-->
+                        <!--note confirmDelete script in footer-->
+                        <input type="submit" name="delete" value="Delete" onclick="return confirmDelete();" class="btn btn-dark form-control mt-3">
+                        <?php }
+                        ?>
                     </form>
                 </div>
 
@@ -63,7 +84,7 @@ if (isset($_POST['delete'])) {
             </div>
 
         </div>
-        <a href="update.php?id=<?php echo htmlspecialchars($_GET['id']); ?>"><button class="btn btn-dark form-control mt-3">Update</button></a>
+   
     </div>
 <?php else :  ?>
     <h5>No such character exists!</h5>

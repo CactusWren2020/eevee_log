@@ -1,6 +1,14 @@
 <?php
+include('templates/header.php');
 //connect to database
 include('config/db_connect.php');
+
+ 
+if (!$loggedin) {
+    //if not logged in, redirect to login page
+    header("Location: login.php");
+    exit;
+}
 
 $errors = array(
     'character_name' => '',
@@ -35,6 +43,7 @@ if (isset($_POST['submit'])) {
         if (mysqli_query($conn, $sql)) {
             //success
             header('Location: index.php');
+            exit;
         } else {
             //error
             echo 'query error: ' . mysqli_error($conn);
@@ -42,7 +51,6 @@ if (isset($_POST['submit'])) {
     }
 }
 ?>
-<?php include('templates/header.php'); ?>
 
 <div class="container p-5">
     <div class="row">

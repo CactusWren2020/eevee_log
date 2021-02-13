@@ -11,7 +11,7 @@
 
 <div class="container">
     <div class="row bg-light p-5 mt-5">
-        <div class="col-md-8">
+        <div class="col">
             <form id="contact-form" method="post" action="contact.php" role="form">
 
 
@@ -71,7 +71,7 @@
 
             </form>
         </div>
-        <div class="col-md-4">
+        <div class="col">
             <div class="card pt-3">
                 <a href="#"><img class="card-img-top" src="templates/assets/images/sylveon.jpg" alt=""></a>
                 <div class="card-body">
