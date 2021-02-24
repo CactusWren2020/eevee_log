@@ -1,9 +1,14 @@
 <?php
-session_start();
+// session_start();
 
-if (isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] == true) {
-  $loggedin = true;
-}
+//autoload files (currently just session.php)
+
+// require __DIR__ . '/../vendor/autoload.php'; 
+  
+//authenticated function comes from session.php
+
+// $loggedin = authenticated();
+
 ?>
 
 <!DOCTYPE html>
@@ -18,7 +23,7 @@ if (isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] == true) {
 
 </head>
 
-<body>
+<body class="body">
   <nav class="navbar navbar-expand-lg navbar-light bg-light static-top">
     <div class="container px-5">
       <a class="navbar-brand" href="#">

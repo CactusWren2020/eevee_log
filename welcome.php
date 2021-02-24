@@ -1,4 +1,5 @@
 <?php
+include("session.php");
 include("templates/header.php");
 
 if (!$loggedin) {

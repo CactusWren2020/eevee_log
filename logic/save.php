@@ -9,6 +9,7 @@ $actor_followers = mysqli_real_escape_string($conn, $_POST['actor_followers']);
 $actor_net_worth = mysqli_real_escape_string($conn, $_POST['actor_net_worth']);
 //$target (for image_upload) already declared above
 $character_description = mysqli_real_escape_string($conn, $_POST['character_description']);
-$actor_description = mysqli_real_escape_string($conn, $_POST['actor_description']);
+$character_personality = mysqli_real_escape_string($conn, $_POST['character_personality']);
+$actor_personality = mysqli_real_escape_string($conn, $_POST['actor_personality']);
 
 ?>
