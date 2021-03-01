@@ -20,6 +20,7 @@
   <title>Eeevee Log</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="templates/assets/css/style.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
 
 </head>
 
@@ -27,7 +28,7 @@
   <nav class="navbar navbar-expand-lg navbar-light bg-light static-top">
     <div class="container px-5">
       <a class="navbar-brand" href="#">
-        <img src="templates/assets/images/eevee-1320568179872387933_0.svg" alt="">
+        <img src="images/eevee.svg" alt="">
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -37,6 +38,11 @@
           <li class="nav-item active">
             <a class="nav-link" href="index.php">Home
               <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="top.php">Leaders
+             
             </a>
           </li>
           <?php if ($loggedin) { ?>
@@ -82,6 +88,11 @@
             </li>
 
           <?php } else echo ''; ?>
+          <li class="nav-item">
+            <a href="#search" class="nav-link" id="search_icon">
+              <i class="fas fa-search"></i>
+            </a>
+          </li>
         </ul>
       </div>
     </div>
