@@ -1,45 +1,46 @@
-<?php 
+<?php
+include('config/db_connect.php');
+$conn = db_connection();
 
-/**
- * receive_body___send_response.php
- */
-$contentType = isset($_SERVER["CONTENT_TYPE"]) ? trim($_SERVER["CONTENT_TYPE"]) : '';
 
-// Set initial response
-$response = [
-  'value' => 0,
-  'error' => 'Nothing happened',
-  'data' => null,
-];
+//get content from stream
+$content = trim(file_get_contents("php://input"));
+file_put_contents('fetch2.txt', '$content: ' . print_r($content, true), FILE_APPEND);
 
-if ($contentType === "application/json") {
+//decode json -> object
+$decoded_content = json_decode($content);
 
-  // Receive the RAW post data.
-  $content = trim(file_get_contents("php://input"));
-   
+file_put_contents('fetch2.txt', '$decoded_content: ' . print_r($decoded_content, true), FILE_APPEND);
 
-  // $decoded can be used the same as you would use $_POST in $.ajax
-  $decoded = json_encode($content, true);
+//get data with key of 'name'
+$term = mysqli_real_escape_string($conn, $decoded_content->term);
+//query for name = $name
+$sql = "SELECT character_name, actor_name, id from characters WHERE character_name LIKE '%$term%' OR actor_name LIKE '%$term%'";
+$result = mysqli_query($conn, $sql);
+$result = mysqli_fetch_all($result, MYSQLI_ASSOC);
 
- 
-  if(! is_array($decoded)) {
-    // NOTE: Sometimes for some reason I have to add the next line as well
-    // $decoded = json_decode($decoded, true);
 
-    // Do something with received data and include it in reponse
-    /* perhaps database manipulation here */
-    $response['data'] = $decoded;
-    // Success
-    $response['value'] = 1;
-    $response['error'] = null;
-  } else {
-    // The JSON is invalid.
-    $response['error'] = 'Received JSON is improperly formatted';
-  }
-} else {
-  // Content-Type is incorrect
-  $response['error'] =  'Content-Type is not set as "application/json"';
-}
+file_put_contents('fetch2.txt', '$result: ' . print_r($result, true), FILE_APPEND);
 
-// echo response for fetch API
-echo json_encode($response);
+//create object to send back to fetch
+$myObj = new \stdClass();
+
+//insert an array
+$myObj->character = [];
+
+//push new objects, each representing a character/actor, into the object->array
+foreach ($result as $character) :
+    $tempObj = new \stdClass();
+    $tempObj->character_name = $character["character_name"];
+    $tempObj->actor_name = $character["actor_name"];
+    $tempObj->id = $character["id"];
+    array_push($myObj->character, $tempObj);
+endforeach;
+
+file_put_contents('fetch2.txt', '$myObj: ' . print_r($myObj, true), FILE_APPEND);
+
+
+//encode object into JSON
+$myJSON = json_encode($myObj);
+//echo it back to the fetch
+echo $myJSON;

@@ -1,0 +1,742 @@
+ $content: {"term":"e"}$decoded_content: stdClass Object
+(
+    [term] => e
+)
+$result: Array
+(
+    [0] => Array
+        (
+            [character_name] => Jinx
+            [actor_name] => Jennifer
+            [id] => 54
+        )
+
+    [1] => Array
+        (
+            [character_name] => Pixii
+            [actor_name] => Roxie Rene Rose
+            [id] => 55
+        )
+
+    [2] => Array
+        (
+            [character_name] => THeo
+            [actor_name] => Edith
+            [id] => 80
+        )
+
+)
+$myObj: stdClass Object
+(
+    [character] => Array
+        (
+            [0] => stdClass Object
+                (
+                    [character_name] => Jinx
+                    [actor_name] => Jennifer
+                    [id] => 
+                )
+
+            [1] => stdClass Object
+                (
+                    [character_name] => Pixii
+                    [actor_name] => Roxie Rene Rose
+                    [id] => 
+                )
+
+            [2] => stdClass Object
+                (
+                    [character_name] => THeo
+                    [actor_name] => Edith
+                    [id] => 
+                )
+
+        )
+
+)
+$content: {"term":"e"}$decoded_content: stdClass Object
+(
+    [term] => e
+)
+$result: Array
+(
+    [0] => Array
+        (
+            [character_name] => Jinx
+            [actor_name] => Jennifer
+            [id] => 54
+        )
+
+    [1] => Array
+        (
+            [character_name] => Pixii
+            [actor_name] => Roxie Rene Rose
+            [id] => 55
+        )
+
+    [2] => Array
+        (
+            [character_name] => THeo
+            [actor_name] => Edith
+            [id] => 80
+        )
+
+)
+$myObj: stdClass Object
+(
+    [character] => Array
+        (
+            [0] => stdClass Object
+                (
+                    [character_name] => Jinx
+                    [actor_name] => Jennifer
+                    [id] => 
+                )
+
+            [1] => stdClass Object
+                (
+                    [character_name] => Pixii
+                    [actor_name] => Roxie Rene Rose
+                    [id] => 
+                )
+
+            [2] => stdClass Object
+                (
+                    [character_name] => THeo
+                    [actor_name] => Edith
+                    [id] => 
+                )
+
+        )
+
+)
+$content: {"term":"e"}$decoded_content: stdClass Object
+(
+    [term] => e
+)
+$result: Array
+(
+    [0] => Array
+        (
+            [character_name] => Jinx
+            [actor_name] => Jennifer
+            [id] => 54
+        )
+
+    [1] => Array
+        (
+            [character_name] => Pixii
+            [actor_name] => Roxie Rene Rose
+            [id] => 55
+        )
+
+    [2] => Array
+        (
+            [character_name] => THeo
+            [actor_name] => Edith
+            [id] => 80
+        )
+
+)
+$myObj: stdClass Object
+(
+    [character] => Array
+        (
+            [0] => stdClass Object
+                (
+                    [character_name] => Jinx
+                    [actor_name] => Jennifer
+                    [id] => 54
+                )
+
+            [1] => stdClass Object
+                (
+                    [character_name] => Pixii
+                    [actor_name] => Roxie Rene Rose
+                    [id] => 55
+                )
+
+            [2] => stdClass Object
+                (
+                    [character_name] => THeo
+                    [actor_name] => Edith
+                    [id] => 80
+                )
+
+        )
+
+)
+$content: {"term":"e"}$decoded_content: stdClass Object
+(
+    [term] => e
+)
+$result: Array
+(
+    [0] => Array
+        (
+            [character_name] => Jinx
+            [actor_name] => Jennifer
+            [id] => 54
+        )
+
+    [1] => Array
+        (
+            [character_name] => Pixii
+            [actor_name] => Roxie Rene Rose
+            [id] => 55
+        )
+
+    [2] => Array
+        (
+            [character_name] => THeo
+            [actor_name] => Edith
+            [id] => 80
+        )
+
+)
+$myObj: stdClass Object
+(
+    [character] => Array
+        (
+            [0] => stdClass Object
+                (
+                    [character_name] => Jinx
+                    [actor_name] => Jennifer
+                    [id] => 54
+                )
+
+            [1] => stdClass Object
+                (
+                    [character_name] => Pixii
+                    [actor_name] => Roxie Rene Rose
+                    [id] => 55
+                )
+
+            [2] => stdClass Object
+                (
+                    [character_name] => THeo
+                    [actor_name] => Edith
+                    [id] => 80
+                )
+
+        )
+
+)
+$content: {"term":"e"}$decoded_content: stdClass Object
+(
+    [term] => e
+)
+$result: Array
+(
+    [0] => Array
+        (
+            [character_name] => Jinx
+            [actor_name] => Jennifer
+            [id] => 54
+        )
+
+    [1] => Array
+        (
+            [character_name] => Pixii
+            [actor_name] => Roxie Rene Rose
+            [id] => 55
+        )
+
+    [2] => Array
+        (
+            [character_name] => THeo
+            [actor_name] => Edith
+            [id] => 80
+        )
+
+)
+$myObj: stdClass Object
+(
+    [character] => Array
+        (
+            [0] => stdClass Object
+                (
+                    [character_name] => Jinx
+                    [actor_name] => Jennifer
+                    [id] => 54
+                )
+
+            [1] => stdClass Object
+                (
+                    [character_name] => Pixii
+                    [actor_name] => Roxie Rene Rose
+                    [id] => 55
+                )
+
+            [2] => stdClass Object
+                (
+                    [character_name] => THeo
+                    [actor_name] => Edith
+                    [id] => 80
+                )
+
+        )
+
+)
+$content: {"term":"eou"}$decoded_content: stdClass Object
+(
+    [term] => eou
+)
+$result: Array
+(
+)
+$myObj: stdClass Object
+(
+    [character] => Array
+        (
+        )
+
+)
+$content: {"term":"pu"}$decoded_content: stdClass Object
+(
+    [term] => pu
+)
+$result: Array
+(
+)
+$myObj: stdClass Object
+(
+    [character] => Array
+        (
+        )
+
+)
+$content: {"term":"f"}$decoded_content: stdClass Object
+(
+    [term] => f
+)
+$result: Array
+(
+    [0] => Array
+        (
+            [character_name] => Jinx
+            [actor_name] => Jennifer
+            [id] => 54
+        )
+
+    [1] => Array
+        (
+            [character_name] => Flair
+            [actor_name] => Paul
+            [id] => 56
+        )
+
+)
+$myObj: stdClass Object
+(
+    [character] => Array
+        (
+            [0] => stdClass Object
+                (
+                    [character_name] => Jinx
+                    [actor_name] => Jennifer
+                    [id] => 54
+                )
+
+            [1] => stdClass Object
+                (
+                    [character_name] => Flair
+                    [actor_name] => Paul
+                    [id] => 56
+                )
+
+        )
+
+)
+$content: {"term":"p"}$decoded_content: stdClass Object
+(
+    [term] => p
+)
+$result: Array
+(
+    [0] => Array
+        (
+            [character_name] => Pixii
+            [actor_name] => Roxie Rene Rose
+            [id] => 55
+        )
+
+    [1] => Array
+        (
+            [character_name] => Flair
+            [actor_name] => Paul
+            [id] => 56
+        )
+
+)
+$myObj: stdClass Object
+(
+    [character] => Array
+        (
+            [0] => stdClass Object
+                (
+                    [character_name] => Pixii
+                    [actor_name] => Roxie Rene Rose
+                    [id] => 55
+                )
+
+            [1] => stdClass Object
+                (
+                    [character_name] => Flair
+                    [actor_name] => Paul
+                    [id] => 56
+                )
+
+        )
+
+)
+$content: {"term":"f"}$decoded_content: stdClass Object
+(
+    [term] => f
+)
+$result: Array
+(
+    [0] => Array
+        (
+            [character_name] => Jinx
+            [actor_name] => Jennifer
+            [id] => 54
+        )
+
+    [1] => Array
+        (
+            [character_name] => Flair
+            [actor_name] => Paul
+            [id] => 56
+        )
+
+)
+$myObj: stdClass Object
+(
+    [character] => Array
+        (
+            [0] => stdClass Object
+                (
+                    [character_name] => Jinx
+                    [actor_name] => Jennifer
+                    [id] => 54
+                )
+
+            [1] => stdClass Object
+                (
+                    [character_name] => Flair
+                    [actor_name] => Paul
+                    [id] => 56
+                )
+
+        )
+
+)
+$content: {"term":"f"}$decoded_content: stdClass Object
+(
+    [term] => f
+)
+$result: Array
+(
+    [0] => Array
+        (
+            [character_name] => Jinx
+            [actor_name] => Jennifer
+            [id] => 54
+        )
+
+    [1] => Array
+        (
+            [character_name] => Flair
+            [actor_name] => Paul
+            [id] => 56
+        )
+
+)
+$myObj: stdClass Object
+(
+    [character] => Array
+        (
+            [0] => stdClass Object
+                (
+                    [character_name] => Jinx
+                    [actor_name] => Jennifer
+                    [id] => 54
+                )
+
+            [1] => stdClass Object
+                (
+                    [character_name] => Flair
+                    [actor_name] => Paul
+                    [id] => 56
+                )
+
+        )
+
+)
+$content: {"term":"f"}$decoded_content: stdClass Object
+(
+    [term] => f
+)
+$result: Array
+(
+    [0] => Array
+        (
+            [character_name] => Jinx
+            [actor_name] => Jennifer
+            [id] => 54
+        )
+
+    [1] => Array
+        (
+            [character_name] => Flair
+            [actor_name] => Paul
+            [id] => 56
+        )
+
+)
+$myObj: stdClass Object
+(
+    [character] => Array
+        (
+            [0] => stdClass Object
+                (
+                    [character_name] => Jinx
+                    [actor_name] => Jennifer
+                    [id] => 54
+                )
+
+            [1] => stdClass Object
+                (
+                    [character_name] => Flair
+                    [actor_name] => Paul
+                    [id] => 56
+                )
+
+        )
+
+)
+$content: {"term":"f"}$decoded_content: stdClass Object
+(
+    [term] => f
+)
+$result: Array
+(
+    [0] => Array
+        (
+            [character_name] => Jinx
+            [actor_name] => Jennifer
+            [id] => 54
+        )
+
+    [1] => Array
+        (
+            [character_name] => Flair
+            [actor_name] => Paul
+            [id] => 56
+        )
+
+)
+$myObj: stdClass Object
+(
+    [character] => Array
+        (
+            [0] => stdClass Object
+                (
+                    [character_name] => Jinx
+                    [actor_name] => Jennifer
+                    [id] => 54
+                )
+
+            [1] => stdClass Object
+                (
+                    [character_name] => Flair
+                    [actor_name] => Paul
+                    [id] => 56
+                )
+
+        )
+
+)
+$content: {"term":"f]8"}$decoded_content: stdClass Object
+(
+    [term] => f]8
+)
+$result: Array
+(
+)
+$myObj: stdClass Object
+(
+    [character] => Array
+        (
+        )
+
+)
+$content: {"term":"fouoe4"}$decoded_content: stdClass Object
+(
+    [term] => fouoe4
+)
+$result: Array
+(
+)
+$myObj: stdClass Object
+(
+    [character] => Array
+        (
+        )
+
+)
+$content: {"term":"foueo"}$decoded_content: stdClass Object
+(
+    [term] => foueo
+)
+$result: Array
+(
+)
+$myObj: stdClass Object
+(
+    [character] => Array
+        (
+        )
+
+)
+$content: {"term":"ouofeud"}$decoded_content: stdClass Object
+(
+    [term] => ouofeud
+)
+$result: Array
+(
+)
+$myObj: stdClass Object
+(
+    [character] => Array
+        (
+        )
+
+)
+$content: {"term":"oeufshou"}$decoded_content: stdClass Object
+(
+    [term] => oeufshou
+)
+$result: Array
+(
+)
+$myObj: stdClass Object
+(
+    [character] => Array
+        (
+        )
+
+)
+$content: {"term":"fshoeu"}$decoded_content: stdClass Object
+(
+    [term] => fshoeu
+)
+$result: Array
+(
+)
+$myObj: stdClass Object
+(
+    [character] => Array
+        (
+        )
+
+)
+$content: {"term":"pudly"}$decoded_content: stdClass Object
+(
+    [term] => pudly
+)
+$result: Array
+(
+)
+$myObj: stdClass Object
+(
+    [character] => Array
+        (
+        )
+
+)
+$content: {"term":"p"}$decoded_content: stdClass Object
+(
+    [term] => p
+)
+$result: Array
+(
+    [0] => Array
+        (
+            [character_name] => Pixii
+            [actor_name] => Roxie Rene Rose
+            [id] => 55
+        )
+
+    [1] => Array
+        (
+            [character_name] => Flair
+            [actor_name] => Paul
+            [id] => 56
+        )
+
+)
+$myObj: stdClass Object
+(
+    [character] => Array
+        (
+            [0] => stdClass Object
+                (
+                    [character_name] => Pixii
+                    [actor_name] => Roxie Rene Rose
+                    [id] => 55
+                )
+
+            [1] => stdClass Object
+                (
+                    [character_name] => Flair
+                    [actor_name] => Paul
+                    [id] => 56
+                )
+
+        )
+
+)
+$content: {"term":"p"}$decoded_content: stdClass Object
+(
+    [term] => p
+)
+$result: Array
+(
+    [0] => Array
+        (
+            [character_name] => Pixii
+            [actor_name] => Roxie Rene Rose
+            [id] => 55
+        )
+
+    [1] => Array
+        (
+            [character_name] => Flair
+            [actor_name] => Paul
+            [id] => 56
+        )
+
+)
+$myObj: stdClass Object
+(
+    [character] => Array
+        (
+            [0] => stdClass Object
+                (
+                    [character_name] => Pixii
+                    [actor_name] => Roxie Rene Rose
+                    [id] => 55
+                )
+
+            [1] => stdClass Object
+                (
+                    [character_name] => Flair
+                    [actor_name] => Paul
+                    [id] => 56
+                )
+
+        )
+
+)

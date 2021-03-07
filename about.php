@@ -1,4 +1,6 @@
-<?php include('templates/header.php'); ?>
+<?php 
+include('session.php');
+include('templates/header.php'); ?>
 
 <div class="container">
     <div class="row my-5">

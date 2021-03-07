@@ -1,0 +1,34 @@
+
+Warning: Illegal string offset 'character_name' in C:\Program Files\Ampps\www\eevees\eevee_log\fetch.php on line 24
+
+Warning: Illegal string offset 'actor_name' in C:\Program Files\Ampps\www\eevees\eevee_log\fetch.php on line 25
+
+Warning: Illegal string offset 'character_name' in C:\Program Files\Ampps\www\eevees\eevee_log\fetch.php on line 24
+
+Warning: Illegal string offset 'actor_name' in C:\Program Files\Ampps\www\eevees\eevee_log\fetch.php on line 25
+{"character_name":"J","actor_name":"J"}
+Warning: Illegal string offset 'character_name' in C:\Program Files\Ampps\www\eevees\eevee_log\fetch.php on line 24
+
+Warning: Illegal string offset 'actor_name' in C:\Program Files\Ampps\www\eevees\eevee_log\fetch.php on line 25
+
+Warning: Illegal string offset 'character_name' in C:\Program Files\Ampps\www\eevees\eevee_log\fetch.php on line 24
+
+Warning: Illegal string offset 'actor_name' in C:\Program Files\Ampps\www\eevees\eevee_log\fetch.php on line 25
+{"character_name":"J","actor_name":"J"}
+Warning: Illegal string offset 'character_name' in C:\Program Files\Ampps\www\eevees\eevee_log\fetch.php on line 24
+
+Warning: Illegal string offset 'actor_name' in C:\Program Files\Ampps\www\eevees\eevee_log\fetch.php on line 25
+
+Warning: Illegal string offset 'character_name' in C:\Program Files\Ampps\www\eevees\eevee_log\fetch.php on line 24
+
+Warning: Illegal string offset 'actor_name' in C:\Program Files\Ampps\www\eevees\eevee_log\fetch.php on line 25
+{"character_name":"J","actor_name":"J"}NULL
+
+Warning: Illegal string offset 'character_name' in C:\Program Files\Ampps\www\eevees\eevee_log\fetch.php on line 25
+
+Warning: Illegal string offset 'actor_name' in C:\Program Files\Ampps\www\eevees\eevee_log\fetch.php on line 26
+
+Warning: Illegal string offset 'character_name' in C:\Program Files\Ampps\www\eevees\eevee_log\fetch.php on line 25
+
+Warning: Illegal string offset 'actor_name' in C:\Program Files\Ampps\www\eevees\eevee_log\fetch.php on line 26
+{"character_name":"J","actor_name":"J"}

@@ -3,5 +3,8 @@
         "files": ["./config/session.php",
             "./config/db_connect.php"
          ]
+    },
+    "scripts": {
+        "watch_errors" : "tail -f ./../../apache/logs/error.log"
     }
 }

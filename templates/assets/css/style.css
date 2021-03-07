@@ -45,6 +45,7 @@ https://bootsnipp.com/snippets/997jD */
 	transform: translate(0px, -100%) scale(0, 0);
     
     opacity: 0;
+    overflow: scroll;
 }
 
 #search.open {
@@ -88,5 +89,69 @@ https://bootsnipp.com/snippets/997jD */
 	border-color: #357ebd;
 	opacity: 1;
 	padding: 10px 17px;
-	font-size: 27px;
+    padding: 10px 17px 15px 17px;
+	font-size: 25px;
+    /* line-height: 50px; */
 }
+
+#search-overlay__results {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    color: rgb(255, 255, 255);
+    background: rgba(0, 0, 0, 0);
+    font-size: 60px;
+    font-weight: 300;
+    text-align: center;
+    border: 0px;
+    margin: 0px auto;
+    margin-top: 100px;
+    padding-left: 30px;
+    padding-right: 30px;
+    outline: none;
+}
+
+.spinner-loader {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 100%;
+        /* margin: 0px auto; */
+        margin-top: 45px;
+        border-radius: 50%;
+         
+        width: 44px;
+        height: 44px;
+        border: 0.25rem solid rgba(255, 255, 255, 0.2);
+        border-top-color: white;
+        -webkit-animation: spin 1s infinite linear;
+                animation: spin 1s infinite linear;
+      }
+      @keyframes spin {
+        0% {
+          -webkit-transform: rotate(0deg);
+                  transform: rotate(0deg);
+        }
+        100% {
+          -webkit-transform: rotate(360deg);
+                  transform: rotate(360deg);
+        }
+      }
+      
+      .no_bullet {
+          list-style-type: none;
+      }
+
+      /* admin panel */
+
+      .overview {
+          height: 100%;
+      }
+      .tab {
+          height: 12vh;
+      }
+
+      .report {
+          height: 25vh;
+          background-color: white;
+      }

@@ -9,11 +9,12 @@
     <button type="button" class="close">×</button>
     <form>
         <input type="search" value="" placeholder="who are you looking for?" />
-        <button type="submit" class="btn btn-primary">Search</button>
+        <!-- <button type="button" id="searchBbutton" class="btn btn-primary">Search</button> -->
+        <div class="col" id="search-overlay__results">
+                <!-- search results from Search.js -->
+            </div>
     </form>
-    <div class="container">
-    <div class="row">
-    <div class="col"></div></div></div>
+     
 </div>
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -25,7 +26,7 @@
 <!-- <script src="javascript/searchOpen.js"></script> -->
 <script src="javascript/index.js" type="module"></script>
 
- 
+
 </body>
 
 </html>

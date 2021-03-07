@@ -45,6 +45,11 @@
              
             </a>
           </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="episodes.php">Episodes
+             
+            </a>
+          </li>
           <?php if ($loggedin) { ?>
 
           <li class="nav-item">
@@ -88,6 +93,11 @@
             </li>
 
           <?php } else echo ''; ?>
+
+          <?php 
+            echo $loggedin ? '<li class="nav-item"><a class="nav-link" href="welcome.php">Welcome<a></li>' : '';
+          ?>
+
           <li class="nav-item">
             <a href="#search" class="nav-link" id="search_icon">
               <i class="fas fa-search"></i>
