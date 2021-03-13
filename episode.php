@@ -1,17 +1,20 @@
 <?php 
 include('session.php');
 include('templates/header.php');
-
-include('services/pretty.php');
 include('services/count_substring.php');
 
 $conn = db_connection();
 
-//$episode variable for page content
-$sql = "SELECT episode, logline, description, characters, id from episodes order by chronology asc";
+//get id from query string and fill out fields
+if (isset($_GET['id'])) {
+    $id = mysqli_real_escape_string($conn, $_GET['id']);
+$sql = "SELECT * from episodes WHERE id = '$id'";
 $result = mysqli_query($conn, $sql);
 $episodes = mysqli_fetch_all($result, MYSQLI_ASSOC);
 mysqli_free_result($result);
+
+// simplify variable for easier use below
+$episode = $episodes[0];
 
 //logic for path_top_pic (getPicFromEpisode($episode))
 function getPicFromEpisode($episode, $conn, $count_substring)
@@ -52,44 +55,39 @@ function getPicFromEpisode($episode, $conn, $count_substring)
 
     return $top_character_pic;
 }
-// var_dump(getPicFromEpisode('Pilot', $conn, $count_substring));
-?>
 
+// var_dump($episode);
+
+
+
+
+
+
+}
+
+?>
+ 
 <div class="container">
-<h1 class="my-5">Episodes</h1>    
-<div class="row">
-    
-    <?php 
-        foreach($episodes as $episode): ?>
-            <div class="col-sm-4 mb-3">
-        <div class="card">
-            <img src="<?php  
+    <div class="row bg-light">
+        <div class="col align-items-center">   
+            <h1 class="my-5">Episode</h1>
+            <img src="
+            <?php  
                 echo getPicFromEpisode($episode["episode"], $conn, $count_substring)[0]["path_to_pic"] ? 
                 getPicFromEpisode($episode["episode"], $conn, $count_substring)[0]["path_to_pic"] 
                 :
                 'images/eevee.svg';
             ?>
-            "  alt="" class="card-img-top">
-            <div class="card-body">
-                <h5 class="card-title mb-3"><?php echo $episode["episode"]; ?></h5>
-                <h6 class="card-subtitle text-muted mb-3"><?php echo $episode["logline"]; ?></h6>
-                <p class="card-text">
-                <?php echo substr($episode["description"], 0, 100) . '...'; ?>
-                </p>
-                <p class="card-text">
-                    Cast: <em><?php echo $episode["characters"];?></em>
-                </p>
-                <a href="episode.php?id=<?php echo $episode['id']; ?>" class="btn btn-outline-primary">More</a>
-            </div>
+            " class="img-fluid my-5 episode-pic" >
+            <h2 class="mb-5"><?php echo $episode["episode"] . ', ' . $episode["chronology"];  ?>
+            <h3 class="h4 mb-5">Logline: <?php echo $episode["logline"]; ?></h3>
+            <h4 class="h5 mb-5">Cast : <?php echo $episode["characters"] ?></h4>
+            <p><?php echo $episode["description"]; ?></p>
+
         </div>
     </div>
-        <?php endforeach;
-    ?>
-    
-    </div>
 </div>
-
 <?php
-mysqli_close($conn);
+mysqli_close($conn); 
 include('templates/footer.php');
- 
+?>

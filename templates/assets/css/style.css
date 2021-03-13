@@ -155,3 +155,8 @@ https://bootsnipp.com/snippets/997jD */
           height: 25vh;
           background-color: white;
       }
+
+      /* episode */
+      .episode-pic {
+          width: 33vw;
+      }

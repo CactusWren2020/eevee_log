@@ -4,7 +4,7 @@
 //autoload files (currently just session.php)
 
 // require __DIR__ . '/../vendor/autoload.php'; 
-  
+
 //authenticated function comes from session.php
 
 // $loggedin = authenticated();
@@ -40,24 +40,33 @@
               <span class="sr-only">(current)</span>
             </a>
           </li>
-          <li class="nav-item active">
+          <li class="nav-item">
             <a class="nav-link" href="top.php">Leaders
-             
+
             </a>
           </li>
-          <li class="nav-item active">
+          <li class="nav-item">
             <a class="nav-link" href="episodes.php">Episodes
-             
+
             </a>
           </li>
+
           <?php if ($loggedin) { ?>
 
-          <li class="nav-item">
-            <a class="nav-link" href="add.php">Add Character</a>
-          </li>
+            <li class="nav-item">
+              <a class="nav-link" href="add_episode.php">Add Episode</a>
+            </li>
 
           <?php } else echo ""; ?>
-          
+
+          <?php if ($loggedin) { ?>
+
+            <li class="nav-item">
+              <a class="nav-link" href="add.php">Add Character</a>
+            </li>
+
+          <?php } else echo ""; ?>
+
           <li class="nav-item">
             <a class="nav-link" href="about.php">About</a>
           </li>
@@ -94,8 +103,8 @@
 
           <?php } else echo ''; ?>
 
-          <?php 
-            echo $loggedin ? '<li class="nav-item"><a class="nav-link" href="welcome.php">Welcome<a></li>' : '';
+          <?php
+          echo $loggedin ? '<li class="nav-item"><a class="nav-link" href="welcome.php">Welcome<a></li>' : '';
           ?>
 
           <li class="nav-item">

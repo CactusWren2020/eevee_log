@@ -40,7 +40,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     //validate credentials
     if (empty($username_err) && empty($password_err)) {
         //prepare a select statement
-        $sql = "SELECT id, username, password FROM users WHERE username = ?";
+        $sql = "SELECT id, username, user_approved, password FROM users WHERE username = ?";
 
         if ($stmt = mysqli_prepare($conn, $sql)) {
             //bind variables to the prepared statement as parameters
@@ -57,8 +57,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 //check if username exists, if yes then verify password
                 if (mysqli_stmt_num_rows($stmt) == 1) {
                     //bind result variables
-                    mysqli_stmt_bind_result($stmt, $id, $username, $hashed_password);
+                    mysqli_stmt_bind_result($stmt, $id, $username, $user_approved, $hashed_password);
                     if (mysqli_stmt_fetch($stmt)) {
+                        //check if user has been approved
+                        if (!$user_approved) {
+                            echo 'you arent approved yet';
+                            exit();
+                        }
                         if (password_verify($password, $hashed_password)) {
                             
                             //password is correct, so start a new session
