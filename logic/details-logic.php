@@ -4,6 +4,8 @@ $conn = db_connection();
  
 //check get request id parameter
 
+
+
 if (isset($_GET['id'])) {
     $id = mysqli_real_escape_string($conn, $_GET['id']);
     $sql = "SELECT * FROM characters WHERE id = $id";
@@ -25,5 +27,5 @@ if (isset($_POST['delete'])) {
         echo 'query error: ' . mysqli_error($conn);
     }
 }
-
+ 
 ?>

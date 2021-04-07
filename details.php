@@ -48,7 +48,7 @@ include('templates/header.php');
                         <?php 
                         //shows delete button only if logged in
                         if ($loggedin) { ?> 
-                        <input type="hidden" name="id_to_delete" class="" value="<?php echo $character['id']; ?>">
+                        <input type="hidden" name="id_to_delete" class="" value="<?php echo htmlspecialchars($character['id']); ?>">
 
                         <!--delete with form action-->
                         <!--note confirmDelete script in footer-->

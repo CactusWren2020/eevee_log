@@ -73,16 +73,16 @@ function getPicFromEpisode($episode, $conn, $count_substring)
             <h1 class="my-5">Episode</h1>
             <img src="
             <?php  
-                echo getPicFromEpisode($episode["episode"], $conn, $count_substring)[0]["path_to_pic"] ? 
-                getPicFromEpisode($episode["episode"], $conn, $count_substring)[0]["path_to_pic"] 
+                echo htmlspecialchars(getPicFromEpisode($episode["episode"], $conn, $count_substring)[0]["path_to_pic"]) ? 
+                htmlspecialchars(getPicFromEpisode($episode["episode"], $conn, $count_substring)[0]["path_to_pic"]) 
                 :
                 'images/eevee.svg';
             ?>
             " class="img-fluid my-5 episode-pic" >
-            <h2 class="mb-5"><?php echo $episode["episode"] . ', ' . $episode["chronology"];  ?>
-            <h3 class="h4 mb-5">Logline: <?php echo $episode["logline"]; ?></h3>
-            <h4 class="h5 mb-5">Cast : <?php echo $episode["characters"] ?></h4>
-            <p><?php echo $episode["description"]; ?></p>
+            <h2 class="mb-5"><?php echo htmlspecialchars($episode["episode"]) . ', ' . htmlspecialchars($episode["chronology"]);  ?>
+            <h3 class="h4 mb-5">Logline: <?php echo htmlspecialchars($episode["logline"]); ?></h3>
+            <h4 class="h5 mb-5">Cast : <?php echo htmlspecialchars($episode["characters"]); ?></h4>
+            <p><?php echo htmlspecialchars($episode["description"]); ?></p>
 
         </div>
     </div>

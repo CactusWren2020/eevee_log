@@ -64,22 +64,22 @@ function getPicFromEpisode($episode, $conn, $count_substring)
             <div class="col-sm-4 mb-3">
         <div class="card">
             <img src="<?php  
-                echo getPicFromEpisode($episode["episode"], $conn, $count_substring)[0]["path_to_pic"] ? 
-                getPicFromEpisode($episode["episode"], $conn, $count_substring)[0]["path_to_pic"] 
+                echo htmlspecialchars(getPicFromEpisode($episode["episode"], $conn, $count_substring)[0]["path_to_pic"]) ? 
+                htmlspecialchars(getPicFromEpisode($episode["episode"], $conn, $count_substring)[0]["path_to_pic"]) 
                 :
                 'images/eevee.svg';
             ?>
             "  alt="" class="card-img-top">
             <div class="card-body">
-                <h5 class="card-title mb-3"><?php echo $episode["episode"]; ?></h5>
-                <h6 class="card-subtitle text-muted mb-3"><?php echo $episode["logline"]; ?></h6>
+                <h5 class="card-title mb-3"><?php echo htmlspecialchars($episode["episode"]); ?></h5>
+                <h6 class="card-subtitle text-muted mb-3"><?php echo htmlspecialchars($episode["logline"]); ?></h6>
                 <p class="card-text">
-                <?php echo substr($episode["description"], 0, 100) . '...'; ?>
+                <?php echo htmlspecialchars(substr($episode["description"], 0, 100)) . '...'; ?>
                 </p>
                 <p class="card-text">
-                    Cast: <em><?php echo $episode["characters"];?></em>
+                    Cast: <em><?php echo htmlspecialchars($episode["characters"]);?></em>
                 </p>
-                <a href="episode.php?id=<?php echo $episode['id']; ?>" class="btn btn-outline-primary">More</a>
+                <a href="episode.php?id=<?php echo htmlspecialchars($episode['id']); ?>" class="btn btn-outline-primary">More</a>
             </div>
         </div>
     </div>

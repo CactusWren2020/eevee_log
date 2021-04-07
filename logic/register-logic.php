@@ -105,7 +105,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                         $myemail = 'mike@mikecho.dev';
                         $subject = "user needs approval";
                         $message = "the user $param_username needs approval" .
-                            '---------------------------------' . "\r\n" . "Accept" . $accept_link . "\r\n" . "Decline" . $decline_link . "\r\n";
+                            '---------------------------------' . "\r\n" . "Accept: " . $accept_link . "\r\n" . " Decline: " . $decline_link . "\r\n";
 
                         $headers = 'From:admin@mikecho.dev' . '\r\n'; //From Headers
                         mail($myemail, $subject, $message, $headers);
